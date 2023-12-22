@@ -1,0 +1,16 @@
+﻿
+@model List<TodoVM>
+
+<h1>View Todos</h1>
+
+<h1>Count : @Model.Count</h1>
+
+<ul>
+    @foreach (var todo in Model)
+    {
+
+        <li>@todo.Title , @todo.Priority</li>
+
+    }
+
+</ul>
